@@ -37,19 +37,17 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     padding: 5px;
     color: black;
     font-family: sans-serif;
 }
 
 nav a:hover {
-    color: darkgrey;
+    color: rgba(13, 156, 199, 0.9);
 }
 
 .portfolio-images {
-    margin-top: 25px;
-   /* padding: 15px;*/
+    padding-top: 35px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -60,16 +58,12 @@ nav a:hover {
     display: inline;
     float: left;
     position: relative;
-    /*	padding-right:10px;
-	padding-top:10px;
-	padding-bottom:10px;*/
     margin: 15px;
     width: 250px;
     height: 230px;
 }
 
 .images img {
-    /*height: 100%;*/
     width: 100%;
 }
 
@@ -103,7 +97,6 @@ nav a:hover {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-family: 'bell mt';
     margin-top: 0;
 }
 
@@ -113,6 +106,10 @@ nav a:hover {
 
 .crane-box {
     background-color: #4382BF;
+}
+
+#atoc{
+	height:230px;
 }
 
 .PBS {
