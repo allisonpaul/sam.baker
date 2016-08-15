@@ -1,0 +1,23 @@
+.content{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 15px;
+	font-family:'lato';
+	/*width:75%;*/
+	max-width: 775px;
+}
+
+.project-name{
+	font-size:3em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.subtitles {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#un-sub{
+	font-size: 25px;
+}

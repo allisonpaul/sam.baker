@@ -1,0 +1,188 @@
+body {
+    width: 75%;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+#sam-name {
+    border: 2px solid black;
+    font-family: 'lato';
+    font-size: 2em;
+    width: 315px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 30%;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    padding-top: 35px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-family: sans-serif;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
+
+.portfolio-images {
+    margin-top: 25px;
+   /* padding: 15px;*/
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.images {
+    display: inline;
+    float: left;
+    position: relative;
+    /*	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;*/
+    margin: 15px;
+    width: 250px;
+    height: 230px;
+}
+
+.images img {
+    /*height: 100%;*/
+    width: 100%;
+}
+
+.overlay {
+    display: none;
+}
+
+.images:hover .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 156, 199, 0.9);
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    font-size: 3em;
+    font-family: 'lato';
+    text-transform: uppercase;
+    color: white;
+}
+
+#crane {
+    font-size: 4.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'bell mt';
+    margin-top: 0;
+}
+
+#co {
+    font-size: 1.5em;
+}
+
+.crane-box {
+    background-color: #4382BF;
+}
+
+.PBS {
+    background-color: #F28247;
+}
+
+#selfie {
+    float: left;
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+#bio {
+    display: inline-block;
+    float: right;
+}
+
+.header-div{
+	max-width: 1000px;
+	width:822px;
+}
+
+/*MEDIA QUERIES FOR RESPONSIVENESS*/
+
+@media only screen and (max-width:1120px) {
+    nav {
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: left;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 0;
+        padding-top: 2px;
+    }
+    header {
+        bottom: 2px;
+    }
+    .header-div {
+        margin-left: 10px;
+    }
+}
+
+#selfie {
+    height: 350px;
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        width: 100%;
+        float: left;
+        display: inline-block;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+    #sam-name {
+        border: 2px solid black;
+        font-family: 'lato';
+        font-size: 2em;
+        width: 250px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    #selfie {
+        height: 150px;
+    }
+}
+
+
