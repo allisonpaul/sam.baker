@@ -5,14 +5,22 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
+
+
+/*header*/
 
 header {
     width: 50%;
     float: left;
     display: inline-block;
-    padding-left: 10px;
     margin-bottom: 25px;
+}
+
+.header-div {
+    max-width: 810px;
+    width: 810px;
 }
 
 #sam-name {
@@ -28,23 +36,31 @@ header {
 }
 
 nav {
-    width: 30%;
+    width: 35%;
     float: right;
     display: inline-block;
     text-align: right;
     padding-top: 35px;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.highlighted {
+    font-weight: bold;
+    color: rgba(13, 156, 199, 0.9);
 }
 
 nav a {
     padding: 5px;
-    color: black;
-    font-family: sans-serif;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
 
 nav a:hover {
     color: rgba(13, 156, 199, 0.9);
 }
+
+
+/*image gallery*/
 
 .portfolio-images {
     padding-top: 35px;
@@ -58,7 +74,8 @@ nav a:hover {
     display: inline;
     float: left;
     position: relative;
-    margin: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
     width: 250px;
     height: 230px;
 }
@@ -90,8 +107,11 @@ nav a:hover {
     color: white;
 }
 
+
+/*company logos*/
+
 #crane {
-    font-size: 4.5em;
+    font-size: 65px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -101,85 +121,160 @@ nav a:hover {
 }
 
 #co {
-    font-size: 1.5em;
+    font-size: 100px;
 }
 
 .crane-box {
-    background-color: #4382BF;
+    background-color: #12757B;
 }
 
-#atoc{
-	height:230px;
+#atoc {
+    height: 230px;
 }
 
 .PBS {
     background-color: #F28247;
 }
 
+
+/*about page*/
+
+#selfie-container {
+    float: left;
+    margin-top: 25px;
+    width: 810px;
+}
+
 #selfie {
     float: left;
     display: inline-block;
-    padding-left: 10px;
-    margin-top: 25px;
+    width: 50%;
 }
 
 #bio {
     display: inline-block;
     float: right;
+    width: 45%;
+    font-family: 'lato';
 }
 
-.header-div{
-	max-width: 1000px;
-	width:822px;
+#email {
+    color: rgb(13, 156, 199);
+    font-weight: bold;
 }
+
+
+/*contact page*/
+
+input {
+    width: 287px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid grey;
+    max-width: 300px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    width: 600px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid grey;
+    color: grey;
+}
+
+textarea:focus {
+    background-color: lightblue;
+}
+
+input[type=submit] {
+    height: 30px;
+    width: 75%;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+#message {
+    font-family: 'lato';
+    color: darkgrey;
+}
+
+.contact-header {
+    margin-bottom: 5px;
+}
+
+.contact {
+    margin-top: 35px;
+}
+
 
 /*MEDIA QUERIES FOR RESPONSIVENESS*/
 
-@media only screen and (max-width:1120px) {
+@media only screen and (max-width:1000px) {
     nav {
-        display: block;
+        display: inline-block;
         float: left;
-        width: 50%;
+        width: 65%;
         text-align: left;
         font-size: 16px;
-        margin-left: 10px;
         margin-top: 0;
         padding-top: 2px;
     }
     header {
         bottom: 2px;
     }
-    .header-div {
-        margin-left: 10px;
-    }
 }
 
-#selfie {
-    height: 350px;
+@media only screen and (max-width: 1100px){
+    .images {
+        width:220px;
+        height:200px;
+    }
+
+    .header-div {
+        width:720px;
+    }
+
 }
+
 
 @media only screen and (max-width:700px) {
     header {
         width: 100%;
         float: left;
         display: inline-block;
-        padding-left: 10px;
         margin-bottom: 15px;
     }
+    
     #sam-name {
         border: 2px solid black;
         font-family: 'lato';
         font-size: 2em;
-        width: 250px;
+        width: 300px;
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
     }
+
     #selfie {
-        height: 150px;
+        width: 300px;
+    }
+
+    #bio {
+        position: relative;
+        clear: both;
+        float: left;
+        width: 300px;
+    }
+    .contact,
+    textarea {
+        width: 300px;
     }
 }
-
-
