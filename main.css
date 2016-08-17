@@ -1,6 +1,6 @@
 body {
     width: 75%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 a {
@@ -16,6 +16,7 @@ header {
     float: left;
     display: inline-block;
     margin-bottom: 25px;
+    justify-content: center;
 }
 
 .header-div {
@@ -36,7 +37,7 @@ header {
 }
 
 nav {
-    width: 35%;
+    width: 45%;
     float: right;
     display: inline-block;
     text-align: right;
@@ -63,11 +64,15 @@ nav a:hover {
 /*image gallery*/
 
 .portfolio-images {
-    padding-top: 35px;
+    padding-top: 15px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     max-width: 1000px;
+    justify-content: center;
+    border-top: lightgrey 1px dotted;
+    border-bottom: lightgrey 1px dotted;
+    padding-bottom: 50px
 }
 
 .images {
@@ -136,6 +141,10 @@ nav a:hover {
     background-color: #F28247;
 }
 
+#nuclear {
+    background-color: whitesmoke;
+}
+
 
 /*about page*/
 
@@ -151,16 +160,27 @@ nav a:hover {
     width: 50%;
 }
 
-#bio {
+#quote {
     display: inline-block;
     float: right;
     width: 45%;
     font-family: 'lato';
+    color: darkgrey;
+    font-size: 14px;
+}
+
+#bio {
+    display: inline-block;
+    font-family: 'lato'
 }
 
 #email {
     color: rgb(13, 156, 199);
     font-weight: bold;
+}
+
+#author {
+    margin-left: 20px;
 }
 
 
@@ -230,18 +250,25 @@ input[type=submit] {
     }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width:1120px) {
     .images {
-        width:220px;
-        height:200px;
+        height: 180px;
+        width: 200px;
     }
-
-    .header-div {
-        width:720px;
+    #atoc {
+        height: 180px;
     }
-
+    #crane {
+        font-size: 40px;
+    }
+    #co {
+        font-size: 50px;
+    }
+    .images:hover .overlay {
+        font-size: 24px;
+        font-family: 'lato';
+    }
 }
-
 
 @media only screen and (max-width:700px) {
     header {
@@ -250,7 +277,6 @@ input[type=submit] {
         display: inline-block;
         margin-bottom: 15px;
     }
-    
     #sam-name {
         border: 2px solid black;
         font-family: 'lato';
@@ -262,11 +288,17 @@ input[type=submit] {
         justify-content: center;
         text-transform: uppercase;
     }
-
     #selfie {
         width: 300px;
+        float: none;
+        margin-bottom: 12px;
     }
-
+    #quote {
+        width: 300px;
+        float: none;
+        display: block;
+        font-size: 12px;
+    }
     #bio {
         position: relative;
         clear: both;
@@ -276,5 +308,35 @@ input[type=submit] {
     .contact,
     textarea {
         width: 300px;
+    }
+    .images {
+        height: 110px;
+        width: 140px;
+        margin-right: 10px;
+    }
+    #atoc {
+        height: 130px;
+    }
+    #crane {
+        font-size: 40px;
+    }
+    #co {
+        font-size: 50px;
+    }
+}
+
+
+/*very large format*/
+
+@media only screen and (min-width: 1620px) {
+    #selfie {
+        width: 55%;
+        float: none;
+    }
+    #selfie-container {
+        float: none;
+    }
+    #quote {
+        width: 40%;
     }
 }
